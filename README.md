@@ -1,4 +1,4 @@
 # Godot Hackathon Project
 
-Kevin Zhang
-William Zheng
+Teammate 1: Kevin Zhang
+Teammate 2: William Zheng
