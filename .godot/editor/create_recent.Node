@@ -1,9 +1,11 @@
+Node2D
+Camera2D
+TileMapLayer
 Label
 HBoxContainer
 Panel
 MarginContainer
 CanvasLayer
-Node2D
 AnimatedSprite2D
 CollisionShape2D
 CharacterBody2D
