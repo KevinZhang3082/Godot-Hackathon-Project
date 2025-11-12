@@ -1,4 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762904116
-icon.svg::CompressedTexture2D::2019918121521547251::1762903481::1762904116::1::::<><><>0<>0<>920576b2ad3127a53023be4a5400fd99<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-README.md::TextFile::-1::1762903698::0::1::::<><><>0<>0<><>::
+::res://::1762912274
+character_body_2d.gd::GDScript::4741523469569020961::1762912060::0::1::::<>CharacterBody2D<><>0<>0<><>::
+icon.svg::CompressedTexture2D::2019918121521547251::1762912060::1762912275::1::::<><><>0<>0<>920576b2ad3127a53023be4a5400fd99<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.tscn::PackedScene::3651103532749564480::1762912060::0::1::::<><><>0<>0<><>::uid://b8s3g02tws22p::::res://character_body_2d.gd<>uid://31p0ylqx002b::::res://icon.svg
+README.md::TextFile::-1::1762912060::0::1::::<><><>0<>0<><>::
