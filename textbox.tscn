@@ -19,10 +19,10 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 325.0
-offset_top = 105.0
-offset_right = -279.0
-offset_bottom = 227.0
+offset_left = 286.0
+offset_top = 190.0
+offset_right = -306.0
+offset_bottom = 301.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -47,21 +47,26 @@ layout_mode = 2
 
 [node name="Start" type="Label" parent="MarginContainer/MarginContainer2/HBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 1
+size_flags_horizontal = 0
+size_flags_vertical = 0
 theme_override_fonts/font = ExtResource("1_vng66")
 theme_override_font_sizes/font_size = 30
 text = "*"
 
 [node name="Label" type="Label" parent="MarginContainer/MarginContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(5, 5)
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 0
+size_flags_vertical = 1
 theme_override_fonts/font = ExtResource("1_vng66")
 theme_override_font_sizes/font_size = 30
-text = "Text!@!"
+text = "Place holder text to test how the words in this amazing testbox works. The sigma boy has not been amazed by "
+autowrap_mode = 2
+clip_text = true
 
 [node name="End" type="Label" parent="MarginContainer/MarginContainer2/HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_fonts/font = ExtResource("1_vng66")
 theme_override_font_sizes/font_size = 30
