@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-const CHAR_READ_RATE = .1
+const CHAR_READ_RATE = .075
 
 @onready var textbox_container = $TextboxContainer
 @onready var start_symbol = $TextboxContainer/MarginContainer2/HBoxContainer/Start
@@ -20,11 +20,7 @@ var text_queue = []
 func _ready() -> void:
 	print("Starting state: State.READY")
 	hide_textbox()
-	queue_text("first text")
-	queue_text("second text")
-	queue_text("third text")
-	queue_text("fourth text")
-	queue_text("fifth text")
+	queue_text("first text is for testing purposes, testing")
 
 func _process(delta) -> void:
 	match current_state:
@@ -35,8 +31,7 @@ func _process(delta) -> void:
 			if Input.is_action_just_pressed("ui_accept"):
 				$Tween.stop_all()
 				label.visible_ratio = 1.0
-				end_symbol.text = ">"
-				change_state(State.FINISHED)
+				_on_Tween_tween_all_complete()
 		State.FINISHED:
 			if Input.is_action_just_pressed("ui_accept"):
 				change_state(State.READY)
