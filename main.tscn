@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dh1tw3jswcmhr"]
+[gd_scene load_steps=4 format=3 uid="uid://dh1tw3jswcmhr"]
 
-[ext_resource type="PackedScene" uid="uid://bsave24nu0lue" path="res://textbox.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bsave24nu0lue" path="res://finished_task/textbox/textbox.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://3jdk6ogxvcl0" path="res://node_2d.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cobomo266hnxn" path="res://interaction_component/interacting_component.tscn" id="3_h2yge"]
 
 [node name="Main_tscn" type="Node2D"]
 
@@ -11,7 +12,9 @@
 visible = false
 
 [node name="character" type="Node2D" parent="."]
-visible = false
+
+[node name="InteractingComponent" parent="character" instance=ExtResource("3_h2yge")]
+position = Vector2(217, 290)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(270, 270)

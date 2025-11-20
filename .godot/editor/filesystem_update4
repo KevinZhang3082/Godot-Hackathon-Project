@@ -1,1 +1,6 @@
-res://textbox.tscn
+res://character_body_2d.gd
+res://main.tscn
+res://area_2d.gd
+res://interaction_component/interactable.tscn
+res://interaction_component/interacting_component.gd
+res://interaction_component/interacting_component.tscn

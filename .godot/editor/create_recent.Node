@@ -1,11 +1,12 @@
 TileMapLayer
+Label
+CollisionShape2D
+Area2D
+CharacterBody2D
 Node2D
 Camera2D
-Label
 HBoxContainer
 Panel
 MarginContainer
 CanvasLayer
 AnimatedSprite2D
-CollisionShape2D
-CharacterBody2D
