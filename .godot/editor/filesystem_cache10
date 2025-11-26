@@ -1,13 +1,15 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763569986
+::res://::1764174804
 Character Model-1.png.png::CompressedTexture2D::5930395539810987947::1762969487::1762969487::1::::<><><>0<>0<>d1e1bc039b8f1fe3940ab3eb8cbd99d1<>res://.godot/imported/Character Model-1.png.png-ca1f6ecbeeb0198426abfd5e1d1db6ed.ctex::
-character_body_2d.gd::GDScript::7657493294806415615::1762964479::0::1::::<>CharacterBody2D<><>0<>0<><>::
+character.gd::GDScript::7477521522056021952::1763574354::0::1::::<>Node2D<><>0<>0<><>::
+character_body_2d.gd::GDScript::7657493294806415615::1763577380::0::1::::<>CharacterBody2D<><>0<>0<><>::
+character_body_2d.tscn::PackedScene::8073834238417823145::1763575084::0::1::::<><><>0<>0<><>::uid://dhdl2b62c3w5l::::res://character_body_2d.gd<>uid://cqqy0o2jx05tv::::res://Character Model-1.png.png
 icon.svg::CompressedTexture2D::2019918121521547251::1762964479::1762964530::1::::<><><>0<>0<>920576b2ad3127a53023be4a5400fd99<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.tscn::PackedScene::7705452173883928095::1763569746::0::1::::<><><>0<>0<><>::uid://bsave24nu0lue::::res://textbox.tscn<>uid://3jdk6ogxvcl0::::res://node_2d.tscn
+main.tscn::PackedScene::7705452173883928095::1763575084::0::1::::<><><>0<>0<><>::uid://bsave24nu0lue::::res://finished_task/textbox/textbox.tscn<>uid://3jdk6ogxvcl0::::res://node_2d.tscn<>uid://desfxmfnyxg5u::::res://character.gd<>uid://dnba4ucpvpblh::::res://character_body_2d.tscn
 MeleeSans.ttf::FontFile::3082811116396289890::1762964479::1762964530::1::::<><><>0<>0<>34ce8ef8030339c563268abcff26ee06<>res://.godot/imported/MeleeSans.ttf-a0ba1ccd5ee7210b5151a066f527a9f8.fontdata::
-node_2d.tscn::PackedScene::1984068680724085743::1762978735::0::1::::<><><>0<>0<><>::uid://3y562fiimrfe::::res://Tiles/4_Seasons_Ground_Tiles.png
+node_2d.tscn::PackedScene::1984068680724085743::1763573770::0::1::::<><><>0<>0<><>::uid://d21v05dtk6nud::::res://Tiles/4_Seasons_Trees.png<>uid://3y562fiimrfe::::res://Tiles/4_Seasons_Ground_Tiles.png
 README.md::TextFile::-1::1763569726::0::1::::<><><>0<>0<><>::
-textbox.tscn::PackedScene::4416268587444531183::1763569878::0::1::::<><><>0<>0<><>::res://Textbox.gd<>uid://dpaok25vvd2m::::res://Undertale.ttf
+textbox.tscn::PackedScene::4416268587444531183::1763570000::0::1::::<><><>0<>0<><>::uid://dms2301pbghwd::::res://finished_task/textbox/Textbox.gd<>uid://dpaok25vvd2m::::res://Undertale.ttf
 Undertale.ttf::FontFile::241557766674838566::1762968380::1762968606::1::::<><><>0<>0<>fbe3a6b793ada295ddc758d3f1f4ea3f<>res://.godot/imported/Undertale.ttf-95ddfc16a59ff1f808246cd92df33bab.fontdata::
 ::res://finished_task/::1763569734
 ::res://finished_task/textbox/::1763569734

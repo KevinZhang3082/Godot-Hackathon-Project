@@ -1,3 +1,7 @@
+Sprite2D
+CollisionShape2D
+CollisionPolygon2D
+CharacterBody2D
 TileMapLayer
 Node2D
 Camera2D
@@ -7,5 +11,3 @@ Panel
 MarginContainer
 CanvasLayer
 AnimatedSprite2D
-CollisionShape2D
-CharacterBody2D
