@@ -1,19 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://cj6py23iq2key"]
+[gd_scene load_steps=5 format=3 uid="uid://cj6py23iq2key"]
 
 [ext_resource type="Script" uid="uid://dhdl2b62c3w5l" path="res://character_body_2d.gd" id="1_ij6vw"]
 [ext_resource type="Texture2D" uid="uid://cqqy0o2jx05tv" path="res://Character Model-1.png.png" id="2_ghijl"]
+[ext_resource type="PackedScene" uid="uid://cobomo266hnxn" path="res://interaction_component/interacting_component.tscn" id="3_ghijl"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_lquwl"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghijl"]
+size = Vector2(13.9, 8)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_ij6vw")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5000024, 40)
+scale = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_ghijl")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.1125, 0.1125)
 texture = ExtResource("2_ghijl")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_lquwl")
-
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+visible = false
+zoom = Vector2(4, 4)
+
+[node name="InteractingComponent" parent="." instance=ExtResource("3_ghijl")]
+visible = false
