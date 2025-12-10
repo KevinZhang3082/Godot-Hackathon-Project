@@ -1,4 +1,5 @@
 CollisionShape2D
+TileMapLayer
 Area2D
 CanvasLayer
 Sprite2D
@@ -6,7 +7,6 @@ Node2D
 CollisionPolygon2D
 StaticBody2D
 CharacterBody2D
-TileMapLayer
 Label
 Camera2D
 HBoxContainer

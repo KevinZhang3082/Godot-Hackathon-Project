@@ -15,14 +15,3 @@ metadata/_edit_lock_ = true
 y_sort_enabled = true
 position = Vector2(500.99997, 247)
 scale = Vector2(0.1, 0.1)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-metadata/_edit_lock_ = true
-
-[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(534, 258, 584, 261, 591, 277, 621, 277, 623, 290, 634, 296, 638, 307, 650, 310, 653, 325, 665, 326, 667, 428, 650, 429, 649, 443, 634, 446, 634, 461, 599.67456, 459.21564, 601, 473, 467, 476, 466, 446, 452, 443, 451, 426, 433, 424, 437, 306, 466, 307, 469, 292, 500, 292, 500, 277, 533, 273)
-metadata/_edit_lock_ = true
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(276, 132, -151, 1, -140, 706, 1231, 710, 1221, -62, -7, -82, 273, 131, 852, 132, 859, 503, 279, 507)
-metadata/_edit_lock_ = true
