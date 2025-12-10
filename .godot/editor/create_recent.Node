@@ -1,9 +1,9 @@
-TileMapLayer
 StaticBody2D
 CollisionPolygon2D
 Sprite2D
 CollisionShape2D
 CharacterBody2D
+TileMapLayer
 Label
 Area2D
 Node2D
@@ -12,3 +12,4 @@ HBoxContainer
 Panel
 MarginContainer
 CanvasLayer
+AnimatedSprite2D

@@ -22,7 +22,7 @@ func _ready() -> void:
 	hide_textbox()
 	queue_text("first text is for testing purposes, testing")
 
-func _process(_delta) -> void:
+func _process(delta) -> void:
 	match current_state:
 		State.READY:
 			if text_queue.size() != 0:

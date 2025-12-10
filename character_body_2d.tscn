@@ -19,6 +19,8 @@ shape = SubResource("RectangleShape2D_ghijl")
 texture = ExtResource("2_ghijl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 zoom = Vector2(4, 4)
 
 [node name="InteractingComponent" parent="." instance=ExtResource("3_ghijl")]
+visible = false
