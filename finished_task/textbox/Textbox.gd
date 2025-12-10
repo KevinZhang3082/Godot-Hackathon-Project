@@ -18,6 +18,7 @@ var current_state = State.READY
 var text_queue = []
 
 func _ready() -> void:
+	$TextboxContainer.visible = false
 	print("Starting state: State.READY")
 	hide_textbox()
 	queue_text("first text is for testing purposes, testing")
