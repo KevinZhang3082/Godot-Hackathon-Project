@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bq3gka8dw8fr8"]
+
+[ext_resource type="PackedScene" path="res://boss/boss.tscn" id="1_ve44f"]
+[ext_resource type="PackedScene" uid="uid://reirbql7lfjd" path="res://player/player.tscn" id="2_any6y"]
+[ext_resource type="Script" uid="uid://bde5lnvq4c6jm" path="res://player/area_2d.gd" id="3_n8ie0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_chy0o"]
+size = Vector2(20, 642)
+
+[node name="BossRoom" type="Node2D"]
+position = Vector2(479, 202)
+
+[node name="player" parent="." instance=ExtResource("2_any6y")]
+position = Vector2(-419, -123)
+
+[node name="SantaBoss" parent="." instance=ExtResource("1_ve44f")]
+
+[node name="ChangeScene" type="Area2D" parent="."]
+script = ExtResource("3_n8ie0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChangeScene"]
+position = Vector2(-482, 122)
+shape = SubResource("RectangleShape2D_chy0o")
+
+[connection signal="body_entered" from="ChangeScene" to="ChangeScene" method="_on_body_entered"]
+[connection signal="body_exited" from="ChangeScene" to="ChangeScene" method="_on_body_exited"]

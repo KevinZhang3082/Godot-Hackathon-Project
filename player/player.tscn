@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://reirbql7lfjd"]
+
+[ext_resource type="Script" uid="uid://dvi2l4770un14" path="res://player/player.gd" id="1_onrkg"]
+[ext_resource type="PackedScene" uid="uid://bluc11swn4k8t" path="res://player_bullet.tscn" id="2_g1dw6"]
+[ext_resource type="Texture2D" uid="uid://o6ognsh8j35t" path="res://player/Character Model-1.png.png" id="2_rkbax"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oul6g"]
+size = Vector2(21, 21)
+
+[node name="player" type="CharacterBody2D"]
+collision_mask = 0
+script = ExtResource("1_onrkg")
+bullet_node = ExtResource("2_g1dw6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_rkbax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_oul6g")

@@ -1,1 +1,2 @@
-res://character_body_2d.gd
+res://player/player.tscn
+res://player_bullet.tscn
