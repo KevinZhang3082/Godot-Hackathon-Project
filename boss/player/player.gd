@@ -18,7 +18,6 @@ func shoot():
 	bullet.direction = (get_global_mouse_position() - global_position).normalized()
 
 	get_parent().call_deferred("add_child", bullet)
-	await get_tree().create_timer(2.0).timeout
  
 func _input(event):
 	if event.is_action("shoot"):
