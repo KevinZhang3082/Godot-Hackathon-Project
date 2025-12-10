@@ -1,10 +1,5 @@
 res://character_body_2d.gd
-<<<<<<< Updated upstream
-res://main.tscn
-res://character_body_2d.tscn
-=======
 res://finished_task/textbox/Textbox.gd
 res://character_body_2d.tscn
 res://node_2d.tscn
 res://main.tscn
->>>>>>> Stashed changes
