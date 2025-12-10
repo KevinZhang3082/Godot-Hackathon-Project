@@ -15,6 +15,10 @@ run/main_scene="uid://dh1tw3jswcmhr"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+InteractionManager="*res://interaction/interaction_area/interactionManager.tscn"
+
 [input]
 
 left={

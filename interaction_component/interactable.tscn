@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://ct76v4swfwsle"]
-
-[ext_resource type="Script" uid="uid://b8n888cwdq327" path="res://area_2d.gd" id="1_trxqp"]
-
-[node name="Interactable" type="Area2D"]
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("1_trxqp")

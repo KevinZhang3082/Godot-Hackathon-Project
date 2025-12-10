@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bsave24nu0lue"]
 
-[ext_resource type="Script" uid="uid://dms2301pbghwd" path="res://finished_task/textbox/Textbox.gd" id="1_7tl7c"]
+[ext_resource type="Script" uid="uid://dms2301pbghwd" path="res://textbox/Textbox.gd" id="1_7tl7c"]
 [ext_resource type="FontFile" uid="uid://dpaok25vvd2m" path="res://Undertale.ttf" id="2_8dtaw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7dm0k"]
