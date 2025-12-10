@@ -1,3 +1,9 @@
 res://finished_task/textbox/Textbox.gd
 res://node_2d.tscn
 res://main.tscn
+res://character_body_2d.gd
+res://finished_task/textbox/textbox.tscn
+res://npc.gd
+res://npctext.tscn
+res://character_body_2d.tscn
+res://interaction_component/interacting_component.tscn

@@ -62,7 +62,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 1
 theme_override_fonts/font = ExtResource("2_8dtaw")
 theme_override_font_sizes/font_size = 30
-text = "Bakaaaa!!! The santa is coming for us!"
+text = "Woah!"
 autowrap_mode = 2
 clip_text = true
 

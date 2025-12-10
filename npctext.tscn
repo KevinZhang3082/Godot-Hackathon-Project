@@ -1,0 +1,72 @@
+[gd_scene load_steps=4 format=3 uid="uid://b76erm7yjh7jp"]
+
+[ext_resource type="FontFile" uid="uid://dpaok25vvd2m" path="res://Undertale.ttf" id="1_mdmjf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_51t8v"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p6grh"]
+
+[node name="NPC_TextBox" type="CanvasLayer"]
+
+[node name="TextboxContainer" type="MarginContainer" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 286.0
+offset_top = 190.0
+offset_right = -306.0
+offset_bottom = 301.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="TextboxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_51t8v")
+
+[node name="MarginContainer2" type="MarginContainer" parent="TextboxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Panel" type="Panel" parent="TextboxContainer/MarginContainer2"]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_p6grh")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextboxContainer/MarginContainer2"]
+layout_mode = 2
+
+[node name="Start" type="Label" parent="TextboxContainer/MarginContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("1_mdmjf")
+theme_override_font_sizes/font_size = 30
+text = "*"
+
+[node name="Label" type="Label" parent="TextboxContainer/MarginContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("1_mdmjf")
+theme_override_font_sizes/font_size = 30
+text = "Woah!"
+autowrap_mode = 2
+clip_text = true
+
+[node name="End" type="Label" parent="TextboxContainer/MarginContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("1_mdmjf")
+theme_override_font_sizes/font_size = 30

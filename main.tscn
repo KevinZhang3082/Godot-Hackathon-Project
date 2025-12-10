@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dh1tw3jswcmhr"]
+[gd_scene load_steps=8 format=3 uid="uid://dh1tw3jswcmhr"]
 
 [ext_resource type="PackedScene" uid="uid://bsave24nu0lue" path="res://finished_task/textbox/textbox.tscn" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://3jdk6ogxvcl0" path="res://node_2d.tscn" id="2_h2yge"]
 [ext_resource type="PackedScene" uid="uid://cj6py23iq2key" path="res://character_body_2d.tscn" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://cn7pqsoptdj3l" path="res://npc.gd" id="4_7mycd"]
+[ext_resource type="Texture2D" uid="uid://cqqy0o2jx05tv" path="res://Character Model-1.png.png" id="5_272bh"]
+[ext_resource type="PackedScene" uid="uid://b76erm7yjh7jp" path="res://npctext.tscn" id="6_5vw27"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kek77"]
+radius = 27.0
 
 [node name="Main_tscn" type="Node2D"]
 
@@ -11,12 +17,39 @@
 [node name="SnowyMap" parent="." instance=ExtResource("2_h2yge")]
 metadata/_edit_lock_ = true
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_1bvp3")]
+[node name="Player" parent="." instance=ExtResource("4_1bvp3")]
 y_sort_enabled = true
 position = Vector2(500.99997, 247)
 scale = Vector2(0.1, 0.1)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(534, 258, 584, 261, 591, 277, 621, 277, 623, 290, 634, 296, 638, 307, 650, 310, 653, 325, 665, 326, 667, 428, 650, 429, 649, 443, 634, 446, 634, 461, 599.67456, 459.21564, 601, 473, 467, 476, 466, 446, 452, 443, 451, 426, 433, 424, 437, 306, 466, 307, 469, 292, 500, 292, 500, 277, 533, 273)
+metadata/_edit_lock_ = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PackedVector2Array(276, 132, -151, 1, -140, 706, 1231, 710, 1221, -62, -7, -82, 273, 131, 852, 132, 859, 503, 279, 507)
+metadata/_edit_lock_ = true
+
+[node name="npc" type="Node2D" parent="."]
+script = ExtResource("4_7mycd")
+
+[node name="NPC_Textbox" parent="npc" instance=ExtResource("6_5vw27")]
+
+[node name="Area2D" type="Area2D" parent="npc"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc/Area2D"]
+position = Vector2(355, 386)
+shape = SubResource("CircleShape2D_kek77")
+
+[node name="Sprite2D" type="Sprite2D" parent="npc"]
+position = Vector2(355, 384)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_272bh")
+
+[connection signal="body_entered" from="npc/Area2D" to="TextBox" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="npc/Area2D" to="npc" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="npc/Area2D" to="TextBox" method="_on_area_2d_body_exited"]
+[connection signal="body_exited" from="npc/Area2D" to="npc" method="_on_area_2d_body_exited"]

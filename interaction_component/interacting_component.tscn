@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bixxfej51jyma" path="res://interaction_component/interacting_component.gd" id="1_pphpr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pphpr"]
-radius = 12.0415945
+radius = 21.095022
 
 [sub_resource type="LabelSettings" id="LabelSettings_nvwg7"]
 font = ExtResource("1_4b1aw")
